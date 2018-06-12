@@ -1,0 +1,64 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.App>.intro {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 3.75em;
+  font-weight: 600;
+}
+
+.App>.tagline {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
+}
+
+.icons-social i {
+  padding: 10px;
+}
+
+.devto {
+  margin-bottom: -0.20rem;
+}
+
+.devto svg {
+  margin-bottom: -0.20rem;
+  margin-left: 0.675rem;
+  ;
+  width: 2.65rem;
+  height: 2.65rem;
+}
+
+.App {
+  background: #ffff00;
+  color: black;
+}
+
+.icons-social a {
+  color: black;
+}
+
+.icons-social a svg path {
+  fill: black;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  width: 120px;
+  margin-left: 45%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
