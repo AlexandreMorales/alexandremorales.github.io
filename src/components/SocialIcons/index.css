@@ -1,11 +1,12 @@
 .social-icons {
-  padding: 0.25rem 0;
-  font-size: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons a {
-  padding: 0 0.625rem;
+  padding: 0.25rem 0.625rem;
   color: black;
+  font-size: 3rem;
 }
 
 .social-icons a.devto svg {
@@ -20,22 +21,21 @@
   box-shadow: 0 0 1px transparent;
 }
 
-.social-icons.animate-icons a:hover, .social-icons.animate-icons a:focus, .social-icons.animate-icons a:active {
-  animation-name: icon-wobble;
-  animation-duration: 0.75s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+.social-icons.animate-icons a:hover, 
+.social-icons.animate-icons a:focus, 
+.social-icons.animate-icons a:active {
+  animation: icon-wobble 1 0.75s ease-in-out;
 }
 
 @keyframes icon-wobble {
   25% {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
   50% {
     transform: translateY(0px);
   }
   75% {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0px);
