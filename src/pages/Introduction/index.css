@@ -1,11 +1,17 @@
-.App {
-  background: #ffff00;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* justify-content: center; */
-  text-align: center;
+.introduction {
+    background: #ffff00;
+}
+
+.intro {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 3.75em;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 100;
 }
 
 .logo {
