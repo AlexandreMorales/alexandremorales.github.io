@@ -1,0 +1,19 @@
+.projects {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects-container {
+    flex: 1 0 auto;
+    padding: 1rem 1.5rem 1rem;
+}
+
+.init{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+}

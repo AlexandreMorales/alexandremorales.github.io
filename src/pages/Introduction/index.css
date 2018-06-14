@@ -1,5 +1,16 @@
 .introduction {
     background: #ffff00;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduction-container {
+    flex: 1 0 auto;
+    padding: 3.25rem 1.5rem 1rem;
 }
 
 .intro {
@@ -18,7 +29,6 @@
     animation: App-logo-spin infinite 20s linear;
     height: 80px;
     width: 120px;
-    margin-left: 45%;
     margin-top: 20px;
 }
 

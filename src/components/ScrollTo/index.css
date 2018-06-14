@@ -1,0 +1,48 @@
+.scroll-to .arrow {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+
+.scroll-to button {
+  cursor: pointer;
+  color: black;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.scroll-to .bounce-down {
+  animation: bounce-down 2s infinite;
+}
+
+@keyframes bounce-down {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.scroll-to .bounce-up {
+  animation: bounce-up 2s infinite;
+}
+
+@keyframes bounce-up {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
