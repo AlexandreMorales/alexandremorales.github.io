@@ -9,7 +9,7 @@
 
 .projects-container {
     flex: 1 0 auto;
-    padding: 1rem 1.5rem 1rem;
+    position: relative;
 }
 
 .init{
