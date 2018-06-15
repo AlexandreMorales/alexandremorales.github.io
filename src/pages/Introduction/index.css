@@ -11,6 +11,11 @@
 .introduction-container {
     flex: 1 0 auto;
     padding: 3.25rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .intro {

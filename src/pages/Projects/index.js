@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollTo from '../../components/ScrollTo';
 import Slider from '../../components/Slider';
+import JSFuck from '../../components/JSFuck';
 
 import './index.css';
 
@@ -21,7 +22,8 @@ export default () =>
                     },
                     {
                         title: 'JS Fuck',
-                        color: '#8D3B72', className:'test'
+                        color: '#8D3B72', className:'test',
+                        component: JSFuck
                     },
                     {
                         title: 'Music',

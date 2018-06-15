@@ -4,12 +4,12 @@ import ScrollTo from '../../components/ScrollTo';
 
 import './index.css';
 
-import logo from './smile.png';
+// import logo from './smile.png';
 
 export default () =>
     (<div className="introduction">
         <div className="introduction-container">
-            <img src={logo} className="logo" alt="logo" />
+            {/* <img src={logo} className="logo" alt="logo" /> */}
             <div className="intro">Hello, I'm Alexandre</div>
             and welcome to my page
             <div className="tagline">Full Stack Developer | Functional Programming Defensor | Musician | Level 70 Bosmer</div>

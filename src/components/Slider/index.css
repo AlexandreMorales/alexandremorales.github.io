@@ -18,7 +18,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
   visibility: visible;
   display: flex;
   align-items: center;
