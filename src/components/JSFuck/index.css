@@ -1,3 +1,31 @@
 code {
     padding: 1px 4px;
 }
+
+.jsfuck-container {
+    text-align: left;
+}
+
+.jsfuck-container .compiler {
+    width: 50%;
+    float: left;
+}
+
+.jsfuck-container .compiler .checkbox {
+    display: inline-block;
+}
+
+.jsfuck-container .compiler .result {
+    width: 94%;
+    height: 150px;
+    margin: 1em 0;
+}
+
+.jsfuck-container .examples {
+    width: 50%;
+    float: right;
+}
+
+.jsfuck-container .examples .examples-title {
+    margin: auto;
+}
