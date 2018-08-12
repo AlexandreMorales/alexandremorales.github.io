@@ -6,7 +6,7 @@ export default ({ children = [], component }) => {
     const slideWidth = 100 / children.length;
 
     return (
-        <div className={"slider-container flexbox-slider test"}>
+        <div className={"slider-container flexbox-slider"}>
             {children.map(slide => {
                 const InnerComponent = slide.component;
 

@@ -2,10 +2,10 @@ import React from 'react';
 
 import './index.css';
 
-export default ({ text }) =>
+export default ({ text, onClick }) =>
     (<div>
-        <label class="container">{text}
-            <input type="checkbox" />
-            <span class="checkmark"></span>
+        <label className="container">{text}
+            <input type="checkbox" onChange={event => onClick && onClick(event.target.checked)} />
+            <span className="checkmark"></span>
         </label>
     </div>)

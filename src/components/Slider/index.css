@@ -68,12 +68,12 @@
   top: 50%;
 }
 
-.flexbox-slider.test .flexbox-slide.test {
+.flexbox-slider:hover .flexbox-slide:hover {
   flex-shrink: 0;
   width: 80% !important;
 }
 
-.flexbox-slider.test .flexbox-slide.test .text-block {
+.flexbox-slider:hover .flexbox-slide:hover .text-block {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -83,7 +83,7 @@
   visibility: visible;
 }
 
-.flexbox-slider.test .flexbox-slide.test .title {
+.flexbox-slider:hover .flexbox-slide:hover .title {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -93,7 +93,7 @@
   transform: scale(1.2);
 }
 
-.flexbox-slider.test .flexbox-slide:not(.test):after {
+.flexbox-slider:hover .flexbox-slide:not(:hover):after {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -103,7 +103,7 @@
   visibility: visible;
 }
 
-.flexbox-slider.test .flexbox-slide:not(.test) .title {
+.flexbox-slider:hover .flexbox-slide:not(:hover) .title {
   position: static;
   white-space: nowrap;
   left: 0;
