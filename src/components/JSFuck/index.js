@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Checkbox from "../Checkbox";
 import JSFuck from "xandelier/JSFuck";
+import TooltipCopy from "../TooltipCopy";
 
 import './index.css';
 
@@ -9,13 +10,14 @@ class JSFuckComponent extends Component {
         super();
         this.state = {
             wrapWithEval: false,
-            result: ""
+            result: "",
+            showToolTip: false
         };
     }
 
     encode() {
         let result = JSFuck.encode(this.refs.input.value, this.state.wrapWithEval);
-        this.setState({ result });
+        this.setState({ result, showToolTip: false });
     }
 
     render() {
@@ -40,17 +42,27 @@ class JSFuckComponent extends Component {
                                     if (event.key === 'Enter')
                                         this.encode();
                                 }} />
-                            <button onClick={this.encode}>
+                            <button onClick={() => this.encode()}>
                                 Encode
                             </button>
                             <div className="checkbox">
                                 <Checkbox
                                     text="Wrap with eval"
-                                    onClick={checked => this.setState({ wrapWithEval: checked })}
+                                    onClick={checked => this.setState({ wrapWithEval: checked, showToolTip: false })}
                                 />
                             </div>
                         </div>
-                        <textarea className="result" readOnly value={this.state.result}></textarea>
+                        <div className="result-container">
+                            <TooltipCopy show={this.state.showToolTip} value={this.state.result} />
+                            <textarea
+                                className="result"
+                                readOnly
+                                value={this.state.result}
+                                onClick={() => {
+                                    this.setState({ showToolTip: true });
+                                }} />
+                            <button className="clear" onClick={() => this.setState({ result: "" })}>Clear</button>
+                        </div>
                     </div>
                     <div className="examples">
                         <h4 className="examples-title">Examples</h4>

@@ -1,0 +1,34 @@
+
+.tooltipcopy {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: inset;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 103%;
+  left: 43%;
+  
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+.tooltipcopy::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltipcopy.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}

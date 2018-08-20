@@ -10,6 +10,16 @@ body {
   font-family: sans-serif;
 }
 
+button {
+  border: none;
+  font-weight: bold;
+  padding: 3px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 14px;
