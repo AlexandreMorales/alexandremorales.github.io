@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import Checkbox from "../Checkbox";
-import "xandelier/build/Xandelier.JSFuck.js";
+import JSFuck from "xandelier/JSFuck";
 
 import './index.css';
 
-class JSFuck extends Component {
+class JSFuckComponent extends Component {
     constructor() {
         super();
         this.state = {
             wrapWithEval: false,
             result: ""
         };
+    }
+
+    encode() {
+        let result = JSFuck.encode(this.refs.input.value, this.state.wrapWithEval);
+        this.setState({ result });
     }
 
     render() {
@@ -28,12 +33,14 @@ class JSFuck extends Component {
                     <div className="compiler">
                         <label>Put your code in here:</label>
                         <div>
-                            <input ref="input" type="text" />
-                            <button
-                                onClick={() => {
-                                    let result = window.JSFuck.Encode(this.refs.input.value, this.state.wrapWithEval);
-                                    this.setState({ result });
-                                }}>
+                            <input
+                                ref="input"
+                                type="text"
+                                onKeyPress={(event) => {
+                                    if (event.key === 'Enter')
+                                        this.encode();
+                                }} />
+                            <button onClick={this.encode}>
                                 Encode
                             </button>
                             <div className="checkbox">
@@ -64,4 +71,4 @@ class JSFuck extends Component {
     }
 }
 
-export default JSFuck;
+export default JSFuckComponent;
