@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Checkbox from "../Checkbox";
-import "xandelier/Xandelier.JSFuck.js";
+import "xandelier/build/Xandelier.JSFuck.js";
 
 import './index.css';
 
